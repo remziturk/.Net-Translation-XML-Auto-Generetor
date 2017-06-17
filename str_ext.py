@@ -11,7 +11,7 @@ class TranslateCommand(sublime_plugin.TextCommand):
         self.view.replace(edit, region, "@localization.Get[\"r_{key}\"]".format(**locals()))
 
 
-        file = open("C:/Users/remzi/Desktop/TFS/AkarcaCiftligi/Akarca/Akarca.Web/Language/tr.xml",'a')
+        file = open("C:/Language/tr.xml",'a')
 
         word = '<word Key="' + key + '" Value="' + s + '"/>'
         
